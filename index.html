@@ -4,208 +4,190 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Amrit Acharya</title>
-  <meta content="" name="Best Portfolio, How does good portfolio look like, portfolio">
-  <meta content="" name="Portfolio">
+  <title>Amrit Acharya - Portfolio</title>
+  <meta content="Professional portfolio of Amrit Acharya, showcasing skills in web and mobile development, API design, and more." name="description">
+  <meta content="portfolio, web developer, mobile developer, Amrit Acharya" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/logo1.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
- <!-- css -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-   
+  <!-- Custom CSS -->
+  <style>
+    .hero-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    }
+    .section-title {
+      @apply text-3xl font-bold text-gray-800 mb-6;
+    }
+    .nav-link:hover {
+      @apply text-blue-500;
+    }
+    .progress-bar {
+      @apply bg-blue-600 h-2 rounded transition-all duration-500;
+    }
+    .icon-box {
+      @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow;
+    }
+    .social-links a {
+      @apply text-gray-600 hover:text-blue-500 transition-colors;
+    }
+    .back-to-top {
+      @apply fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-gray-100 font-sans">
 
-  
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- Mobile Nav Toggle -->
+  <button class="md:hidden fixed top-4 right-4 z-50 text-white bg-blue-600 p-2 rounded-full" onclick="toggleNav()">
+    <i class="bi bi-list text-2xl"></i>
+  </button>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Amrit Acharya</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/Amrit_Official_?t=t0LrZuJmGNM2sZAHvLnomQ&s=07"target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/codeshare99" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://instagram.com/amrit.acharya.007?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank"class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 h-full bg-gray-900 text-white w-64 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40" data-nav>
+    <div class="flex flex-col h-full p-6">
+      <div class="profile text-center">
+        <img src="assets/img/profile.png" alt="Amrit Acharya" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <h1 class="text-xl font-bold"><a href="index.html" class="text-white">Amrit Acharya</a></h1>
+        <div class="social-links mt-4 flex justify-center space-x-4">
+          <a href="https://twitter.com/Amrit_Official_?t=t0LrZuJmGNM2sZAHvLnomQ&s=07" target="_blank" class="twitter"><i class="bx bxl-twitter text-2xl"></i></a>
+          <a href="https://www.facebook.com/codeshare99" target="_blank" class="facebook"><i class="bx bxl-facebook text-2xl"></i></a>
+          <a href="https://instagram.com/amrit.acharya.007?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank" class="instagram"><i class="bx bxl-instagram text-2xl"></i></a>
+          <a href="#" class="skype"><i class="bx bxl-skype text-2xl"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin text-2xl"></i></a>
         </div>
       </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      <nav id="navbar" class="mt-8 flex-1">
+        <ul class="space-y-4">
+          <li><a href="#hero" class="nav-link flex items-center space-x-2 text-lg"><i class="bx bx-home"></i><span>Home</span></a></li>
+          <li><a href="#about" class="nav-link flex items-center space-x-2 text-lg"><i class="bx bx-user"></i><span>About</span></a></li>
+          <li><a href="#skills" class="nav-link flex items-center space-x-2 text-lg"><i class="bx bx-book-content"></i><span>Skills</span></a></li>
+          <li><a href="#resume" class="nav-link flex items-center space-x-2 text-lg"><i class="bx bx-file-blank"></i><span>Resume</span></a></li>
+          <li><a href="#services" class="nav-link flex items-center space-x-2 text-lg"><i class="bx bx-server"></i><span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link flex items-center space-x-2 text-lg"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
         </ul>
-      </nav> 
+      </nav>
     </div>
-  </header> 
+  </header>
 
-  
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <!-- Hero Section -->
+  <section id="hero" class="hero-bg h-screen flex items-center justify-center text-center text-white">
     <div class="hero-container" data-aos="fade-in">
-    
-      <h1>Amrit Acharya</h1>
-      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Student"></span></p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Amrit Acharya</h1>
+      <p class="text-xl md:text-2xl">I'm a <span class="typed" data-typed-items="Developer, Freelancer, Student"></span></p>
     </div>
-  </section> 
+  </section>
 
-  <main id="main">
-
-     
-    <section id="about" class="about color6">
-      <div class="container">
-
-        <div class="section-title">
+  <main id="main" class="pt-16">
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="section-title text-center">
           <h2>About</h2>
-     
-             <p>
-             </p>
+          <p class="text-gray-600">Learn more about me and my journey as a developer.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/i.jpg" class="img-fluid" alt="">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="col-span-1" data-aos="fade-right">
+            <img src="assets/img/i.jpg" class="w-full rounded-lg shadow-md" alt="Amrit Acharya">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Mobile &amp; Web Developer.</h3>
-            <p class="fst-italic">
-            My Information
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>10 March 2002</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.acharyaamrit.com.np</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>9864503139</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bharatpur, Chitwan</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Under-Graduate</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>acharyaamrit47@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span> Available</span></li>
-                </ul>
-              </div>
+          <div class="col-span-2" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold mb-4">Mobile & Web Developer</h3>
+            <p class="text-gray-600 italic mb-4">My Information</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <ul class="space-y-2">
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>Birthday:</strong> <span>10 March 2002</span></li>
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>Website:</strong> <span>www.acharyaamrit.com.np</span></li>
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>Phone:</strong> <span>9864503139</span></li>
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>City:</strong> <span>Bharatpur, Chitwan</span></li>
+              </ul>
+              <ul class="space-y-2">
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>Age:</strong> <span>22</span></li>
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>Degree:</strong> <span>Under-Graduate</span></li>
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>Email:</strong> <span>acharyaamrit47@gmail.com</span></li>
+                <li class="flex items-center"><i class="bi bi-chevron-right mr-2"></i><strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
             </div>
-            
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg color5">
-      <div class="container">
-
-        <div class="section-title">
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="section-title text-center">
           <h2>Skills</h2>
-         <p>Knowledge in Web-development, Mobile Development, API Designing </p>
+          <p class="text-gray-600">Expertise in Web Development, Mobile Development, and API Design</p>
         </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div data-aos="fade-up">
+            <div class="mb-4">
+              <span class="block text-lg font-medium mb-1">PHP <span class="float-right">80%</span></span>
+              <div class="progress-bar-wrap bg-gray-200 rounded">
+                <div class="progress-bar w-4/5"></div>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">Laravel <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="mb-4">
+              <span class="block text-lg font-medium mb-1">Laravel <span class="float-right">60%</span></span>
+              <div class="progress-bar-wrap bg-gray-200 rounded">
+                <div class="progress-bar w-3/5"></div>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="mb-4">
+              <span class="block text-lg font-medium mb-1">JavaScript <span class="float-right">75%</span></span>
+              <div class="progress-bar-wrap bg-gray-200 rounded">
+                <div class="progress-bar w-3/4"></div>
               </div>
             </div>
-
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Android <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <span class="block text-lg font-medium mb-1">Android <span class="float-right">60%</span></span>
+              <div class="progress-bar-wrap bg-gray-200 rounded">
+                <div class="progress-bar w-3/5"></div>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">40%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="mb-4">
+              <span class="block text-lg font-medium mb-1">WordPress/CMS <span class="float-right">40%</span></span>
+              <div class="progress-bar-wrap bg-gray-200 rounded">
+                <div class="progress-bar w-2/5"></div>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">Java <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="mb-4">
+              <span class="block text-lg font-medium mb-1">Java <span class="float-right">55%</span></span>
+              <div class="progress-bar-wrap bg-gray-200 rounded">
+                <div class="progress-bar w-11/20"></div>
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume color4">
-      <div class="container">
-
-        <div class="section-title">
+    <!-- Resume Section -->
+    <section id="resume" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="section-title text-center">
           <h2>Resume</h2>
-          <p>Dedicated and ambitious BCA student with a strong passion for programming and a natural inclination towards problem-solving. 
-            Possesses a quick learning ability and thrives in challenging environments that require analytical thinking and attention to detail. Enjoys debugging and regularly practices coding to hone skills in various programming languages. <br>
-             Seeks opportunities to apply knowledge and contribute to innovative projects. Eager to leverage technical expertise and drive for excellence in a dynamic professional setting.
-
-          </p>
+          <p class="text-gray-600">Dedicated BCA student with a passion for programming and problem-solving.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Amrit Acharya</h4>
-              <ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div data-aos="fade-up">
+            <h3 class="text-xl font-semibold mb-4">Summary</h3>
+            <div class="mb-6">
+              <h4 class="text-lg font-medium">Amrit Acharya</h4>
+              <ul class="list-disc pl-5 text-gray-600">
                 <li>Nationality: Nepali</li>
                 <li>DOB: 2002/03/10</li>
                 <li>Languages: English, Nepali, Hindi</li>
@@ -214,216 +196,220 @@
                 <li>acharyaamrit47@gmail.com</li>
               </ul>
             </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Computer Application</h4>
-              <h5>2021 - present</h5>
-              <p><em>Oxford College of Engineering and Management,Gaidakot</em></p>
-              <p>I am Currently Doing Bachelor Of Computer Appication(BCA) from Oxford College of Engineering And Management. </p>
+            <h3 class="text-xl font-semibold mb-4">Education</h3>
+            <div class="mb-6">
+              <h4 class="text-lg font-medium">Bachelor of Computer Application</h4>
+              <h5 class="text-gray-500">2021 - Present</h5>
+              <p class="text-gray-600"><em>Oxford College of Engineering and Management, Gaidakot</em></p>
+              <p class="text-gray-600">Currently pursuing a Bachelor of Computer Application (BCA).</p>
             </div>
-            <div class="resume-item">
-              <h4>+2 computer Science</h4>
-              <h5>2019 - 2021</h5>
-              <p><em>Sky Rider Higher Secondary School</em></p>
-              <p>I Have Completed my Higher Education with Computer Science as Major from Sky Rider Higher Secondary school. </p>
+            <div class="mb-6">
+              <h4 class="text-lg font-medium">+2 Computer Science</h4>
+              <h5 class="text-gray-500">2019 - 2021</h5>
+              <p class="text-gray-600"><em>Sky Rider Higher Secondary School</em></p>
+              <p class="text-gray-600">Completed higher education with Computer Science as major.</p>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Projects</h3>
-            <div class="resume-item">
-              <h4>PHP</h4>
-              <h5>MVC Architecture</h5>
-             
-              <ul>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-semibold mb-4">Projects</h3>
+            <div class="mb-6">
+              <h4 class="text-lg font-medium">PHP</h4>
+              <h5 class="text-gray-500">MVC Architecture</h5>
+              <ul class="list-disc pl-5 text-gray-600">
                 <li>Content Management System - CMS</li>
-                <li>E-Commerse Web site </li>
+                <li>E-Commerce Website</li>
                 <li>Food Ordering System</li>
               </ul>
             </div>
-            <div class="resume-item">
-              <h4>Laravel </h4>
-              <ul>
-                <li>Event Management With API </li>
+            <div class="mb-6">
+              <h4 class="text-lg font-medium">Laravel</h4>
+              <ul class="list-disc pl-5 text-gray-600">
+                <li>Event Management with API</li>
                 <li>Review System</li>
                 <li>Task-Monitor System</li>
               </ul>
             </div>
-            <div class="resume-item">
-              <h4>Android </h4>
-              <h5>Java</h5>
-
-              <ul>
-                <li>Music Player </li>
+            <div class="mb-6">
+              <h4 class="text-lg font-medium">Android</h4>
+              <h5 class="text-gray-500">Java</h5>
+              <ul class="list-disc pl-5 text-gray-600">
+                <li>Music Player</li>
                 <li>Note App</li>
                 <li>Weather App</li>
               </ul>
             </div>
-            <div class="resume-item">
-              <h4>Dot Net </h4>
-              <ul>
-                <li>Cafe Management System </li>
+            <div class="mb-6">
+              <h4 class="text-lg font-medium">Dot Net</h4>
+              <ul class="list-disc pl-5 text-gray-600">
+                <li>Cafe Management System</li>
                 <li>Driving School</li>
                 <li>POS</li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services color1">
-      <div class="container">
-
-        <div class="section-title">
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="section-title text-center">
           <h2>Services</h2>
-         <!-- service description -->
+          <p class="text-gray-600">Explore the range of professional services I offer.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-brush"></i></div>
-            <h4 class="title"><a href=""> Web Design</a></h4>
-            <p class="description">Provide the best design for Websites </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="icon-box" data-aos="fade-up">
+            <div class="icon text-blue-600 mb-4"><i class="bi bi-brush text-3xl"></i></div>
+            <h4 class="title font-semibold text-lg"><a href="#">Web Design</a></h4>
+            <p class="description text-gray-600">Crafting visually stunning and user-friendly website designs.</p>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-code"></i></div>
-            <h4 class="title"><a href="">Web Developement</a></h4>
-            <p class="description">Full Dynamic And Static Web Development</p>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon text-blue-600 mb-4"><i class="bi bi-code text-3xl"></i></div>
+            <h4 class="title font-semibold text-lg"><a href="#">Web Development</a></h4>
+            <p class="description text-gray-600">Building dynamic and static websites with modern technologies.</p>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Graphic Design</a></h4>
-            <p class="description"> Can Provide the Best Graphic Design(Logo, Banner, Company-Logo, Brand-Logo, Thumbnails etc) </p>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon text-blue-600 mb-4"><i class="bi bi-bar-chart text-3xl"></i></div>
+            <h4 class="title font-semibold text-lg"><a href="#">Graphic Design</a></h4>
+            <p class="description text-gray-600">Creating logos, banners, and brand assets with a professional touch.</p>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-code"></i></div>
-            <h4 class="title"><a href="">API Development</a></h4>
-            <p class="description">Can develop the apis for web front end client and mobile clients.</p>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon text-blue-600 mb-4"><i class="bi bi-code text-3xl"></i></div>
+            <h4 class="title font-semibold text-lg"><a href="#">API Development</a></h4>
+            <p class="description text-gray-600">Developing robust APIs for web and mobile applications.</p>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-phone"></i></div>
-            <h4 class="title"><a href="">Mobile Application Development</a></h4>
-            <p class="description">Provide Anroid Application with best UI/Ux design.</p>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon text-blue-600 mb-4"><i class="bi bi-phone text-3xl"></i></div>
+            <h4 class="title font-semibold text-lg"><a href="#">Mobile Application Development</a></h4>
+            <p class="description text-gray-600">Building Android applications with optimal UI/UX design.</p>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-code"></i></div>
-            <h4 class="title"><a href="">Software Development</a></h4>
-            <p class="description">Develop the software as per requirement.</p>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon text-blue-600 mb-4"><i class="bi bi-code text-3xl"></i></div>
+            <h4 class="title font-semibold text-lg"><a href="#">Software Development</a></h4>
+            <p class="description text-gray-600">Custom software solutions tailored to your needs.</p>
           </div>
         </div>
-
       </div>
-    </section><!-- End Services Section -->
-    
- 
+    </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact color2">
-      <div class="container">
-
-        <div class="section-title">
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="section-title text-center">
           <h2>Contact</h2>
-          <p>For Any Queries Please Contact Me By Filling The Contact Form Bellow Or You Can Also Contact Me Via Email Or Call.</p>
+          <p class="text-gray-600">Get in touch for any queries or project discussions.</p>
         </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Bharatpur,chitwan</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-in">
+          <div class="info space-y-6">
+            <div class="address flex items-start">
+              <i class="bi bi-geo-alt text-blue-600 text-2xl mr-4"></i>
+              <div>
+                <h4 class="font-semibold">Location:</h4>
+                <p class="text-gray-600">Bharatpur, Chitwan</p>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>acharyaamrit47@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>9864503139</p>
-              </div>
-
-               
             </div>
-
+            <div class="email flex items-start">
+              <i class="bi bi-envelope text-blue-600 text-2xl mr-4"></i>
+              <div>
+                <h4 class="font-semibold">Email:</h4>
+                <p class="text-gray-600">acharyaamrit47@gmail.com</p>
+              </div>
+            </div>
+            <div class="phone flex items-start">
+              <i class="bi bi-phone text-blue-600 text-2xl mr-4"></i>
+              <div>
+                <h4 class="font-semibold">Call:</h4>
+                <p class="text-gray-600">9864503139</p>
+              </div>
+            </div>
           </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formsubmit.co/digitalworld69@proton.me" method="post" role="form" class="php-email-form">
+          <div>
+            <form action="https://formsubmit.co/digitalworld69@proton.me" method="post" class="space-y-4">
               <input type="hidden" name="_captcha" value="false">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="form-group">
+                  <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                  <input type="text" name="name" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                <div class="form-group">
+                  <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                  <input type="email" name="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" placeholder="Email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                <input type="text" name="subject" id="subject" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea name="message" id="message" rows="6" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-              
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Send Message</button>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-             
             </form>
           </div>
-
         </div>
-
       </div>
-    </section> 
+    </section>
+  </main>
 
-  </main> 
-
-  
-  <footer id="footer">
-    <div class="container">
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
       <div class="copyright">
-        &copy; Copyright <strong><span>Amrit Acharya</span></strong>
+        © Copyright <strong>Amrit Acharya</strong>. All Rights Reserved.
       </div>
-       
     </div>
   </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short text-2xl"></i></a>
 
-   
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Vendor Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true
+    });
 
-  
-  <script src="assets/js/main.js"></script>
+    // Initialize Typed.js
+    if (document.querySelector('.typed')) {
+      new Typed('.typed', {
+        strings: ['Developer', 'Freelancer', 'Student'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000,
+        loop: true
+      });
+    }
 
+    // Mobile Nav Toggle
+    function toggleNav() {
+      const nav = document.querySelector('[data-nav]');
+      nav.classList.toggle('-translate-x-full');
+    }
+
+    // Smooth Scroll
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetSection.offsetTop - 80,
+          behavior: 'smooth'
+        });
+        if (window.innerWidth < 768) {
+          toggleNav();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
