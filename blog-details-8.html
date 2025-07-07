@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Backend Developer Blog - Laravel Authentication">
+    <meta name="keywords" content="Backend, Developer, PHP, Laravel, Authentication">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Details | Backend Developer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./portfolio.html">Portfolio</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">About</a></li>
+                                        <li><a href="./portfolio.html">Portfolio</a></li>
+                                        <li><a href="./blog.html">Blog</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                                                       <a href="https://www.facebook.com/share/1V6upWp5oy/?mibextid=wwXIfr"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/Amrit-Acharya1"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amrit-acharya-7063472a8/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Blog Details</h2>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <a href="./blog.html">Blog</a>
+                            <span>Laravel Authentication Best Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog__details__content">
+                        <div class="blog__details__item">
+                            <h3>Best Practices for Laravel Authentication Systems</h3>
+                            <br>
+                            <ul>
+                                <li>March 30, 2025</li>
+                            </ul>
+                           <br>
+                            <div class="blog__details__item__text">
+                                <p>Authentication is a cornerstone of secure web applications. Laravel’s built-in authentication system simplifies building robust, user-friendly login systems with best practices.</p>
+                                <h4>Why Authentication Matters</h4>
+                                <p>Secure authentication ensures only authorized users access protected resources, maintaining data integrity and user trust.</p>
+                                <h4>Best Practices</h4>
+                                <ul>
+                                    <li><strong>Laravel Auth Scaffolding:</strong> Use `artisan make:auth` or Laravel Breeze for quick setup.</li>
+                                    <li><strong>Two-Factor Authentication:</strong> Implement 2FA for enhanced security using packages like Laravel Fortify.</li>
+                                    <li><strong>Session Management:</strong> Configure secure session handling with encrypted cookies.</li>
+                                    <li><strong>Password Policies:</strong> Enforce strong passwords with validation rules.</li>
+                                    <li><strong>Account Lockout:</strong> Implement lockout mechanisms to prevent brute-force attacks.</li>
+                                </ul>
+                                <h4>Implementation Steps</h4>
+                                <p>Run `php artisan make:auth` or install Breeze for authentication scaffolding. Add 2FA with Fortify, configuring OTPs via email or authenticator apps. Set `session.secure` to `true` in `config/session.php`. Use Laravel’s validation to enforce password complexity. Implement lockout with packages like `laravel-throttle` to limit login attempts.</p>
+                                <h4>Conclusion</h4>
+                                <p>Laravel’s authentication tools make it easy to build secure, scalable login systems. These practices ensure user safety and application reliability. Need authentication for your app? <a href="./contact.html">Reach out</a> for expert help!</p>
+                            </div>
+                            <div class="blog__details__tags">
+                                <a href="#">Authentication</a>
+                                <a href="#">Laravel</a>
+                                <a href="#">PHP</a>
+                                <a href="#">Security</a>
+                            </div>
+                            <div class="blog__details__btns">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <a href="blog-details-7.html" class="blog__details__btns__item">
+                                            <p><span class="arrow_left"></span> Previous Post</p>
+                                            <h5>Scaling Laravel Applications with Docker</h5>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <a href="blog-details-9.html" class="blog__details__btns__item blog__details__btns__item--next">
+                                            <p>Next Post <span class="arrow_right"></span></p>
+                                            <h5>Migrating Legacy PHP Code to Modern Laravel</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <!-- Footer Section Begin -->
+   <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="https://www.facebook.com/share/1V6upWp5oy/?mibextid=wwXIfr"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/Amrit-Acharya1"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amrit-acharya-7063472a8/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About Me</h5>
+                            <p>A dedicated backend developer with years of experience in building scalable web
+                                applications using PHP.</p>
+                            <a href="./about.html" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Explore</h5>
+                            <ul>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./portfolio.html">Portfolio</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>My Work</h5>
+                            <ul>
+                                <li><a href="./portfolio.html">Projects</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="https://github.com/Amrit-Acharya1">GitHub</a></li>
+                                <li><a href="#">Case Studies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>Stay updated with the latest backend development tips!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer__copyright__text">Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | Amrit Acharya 
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
