@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
       
 </head>
 
@@ -80,40 +82,55 @@
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg  " data-setbg="img/hero/hero-3.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>Expert in Backend</span>
-                                <h2>Backend Developer Portfolio</h2>
-                                <a href="./about.html" class="primary-btn">Learn More About Me</a>
+            <div class="hero__item relative" data-setbg="img/hero/hero-3.jpg">
+                <div
+                    class="before:content-[''] before:absolute before:inset-0 before:bg-[url('img/hero/hero-3.jpg')] before:bg-cover before:bg-center before:opacity-60 before:z-[-1]">
+                </div>
+                <div class="container mx-auto">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="lg:w-1/2">
+                            <div class="hero__text relative z-10">
+                                <span class="block text-lg">Expert in Backend</span>
+                                <h2 class="text-3xl font-bold">Backend Developer Portfolio</h2>
+                                <a href="./about.html"
+                                    class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn
+                                    More About Me</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-3.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>Building Robust APIs</span>
-                                <h2>Backend Solutions</h2>
-                                <a href="./portfolio.html" class="primary-btn">View My Projects</a>
+            <div class="hero__item relative" data-setbg="img/hero/hero-3.jpg">
+                <div
+                    class="before:content-[''] before:absolute before:inset-0 before:bg-[url('img/hero/hero-3.jpg')] before:bg-cover before:bg-center before:opacity-60 before:z-[-1]">
+                </div>
+                <div class="container mx-auto">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="lg:w-1/2">
+                            <div class="hero__text relative z-10">
+                                <span class="block text-lg">Building Robust APIs</span>
+                                <h2 class="text-3xl font-bold">Backend Solutions</h2>
+                                <a href="./portfolio.html"
+                                    class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">View
+                                    My Projects</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-3.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>Scalable Applications</span>
-                                <h2>Software Development</h2>
-                                <a href="./contact.html" class="primary-btn">Get in Touch</a>
+            <div class="hero__item relative" data-setbg="img/hero/hero-3.jpg">
+                <div
+                    class="before:content-[''] before:absolute before:inset-0 before:bg-[url('img/hero/hero-3.jpg')] before:bg-cover before:bg-center before:opacity-60 before:z-[-1]">
+                </div>
+                <div class="container mx-auto">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="lg:w-1/2">
+                            <div class="hero__text relative z-10">
+                                <span class="block text-lg">Scalable Applications</span>
+                                <h2 class="text-3xl font-bold">Software Development</h2>
+                                <a href="./contact.html"
+                                    class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Get
+                                    in Touch</a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +159,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
-                                <div class="services__item__icon">
+                                <div class="services__item__icon flex items-center justify-center">
                                     <img src="img/icons/web.png" alt="">
                                 </div>
                                 <h4>Web Development</h4>
@@ -152,7 +169,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
-                                <div class="services__item__icon">
+                                <div class="services__item__icon flex items-center justify-center">
                                     <img src="img/icons/postman.png" alt="">
                                 </div>
                                 <h4>API Development</h4>
@@ -162,7 +179,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
-                                <div class="services__item__icon">
+                                <div class="services__item__icon flex items-center justify-center">
                                     <img src="img/icons/database.png" alt="">
                                 </div>
                                 <h4>Database Management</h4>
@@ -172,7 +189,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
-                                <div class="services__item__icon">
+                                <div class="services__item__icon flex items-center justify-center">
                                     <img src="img/icons/server.png" alt="">
                                 </div>
                                 <h4>Server-Side Logic</h4>
