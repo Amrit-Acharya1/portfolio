@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.acharyaamrit.com.np/</loc>
+        <lastmod>2025-08-27</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.acharyaamrit.com.np/about.html</loc>
+        <lastmod>2025-08-27</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.acharyaamrit.com.np/portfolio.html</loc>
+        <lastmod>2025-08-27</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.acharyaamrit.com.np/services.html</loc>
+        <lastmod>2025-08-27</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.acharyaamrit.com.np/blog.html</loc>
+        <lastmod>2025-08-27</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.acharyaamrit.com.np/contact.html</loc>
+        <lastmod>2025-08-27</lastmod>
+        <priority>0.6</priority>
+    </url>
+</urlset>
